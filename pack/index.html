@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Homecoming Pack</title>
+<meta name="description" content="The Onward and Upward Climb — a returning missionary's homecoming plan, and the tool kit that travels with it.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<!--
+  ─────────────────────────────────────────────────────────────────────────
+  THE ONE LINE THAT MATTERS IF THE LINKS BREAK
+  ─────────────────────────────────────────────────────────────────────────
+  Every document below is linked by its bare filename, so this page works
+  when index.html and the seven files sit in the SAME folder on the server
+  (e.g. https://yoursite.com/pack/).
+
+  If instead the files are uploaded to a WordPress Media Library — or
+  anywhere else that puts them on a different path — set BASE at the bottom
+  of this file to that path and every link is rewritten on load. One line.
+  ─────────────────────────────────────────────────────────────────────────
+-->
+
+<style>
+  /* Palette lifted from render_sendready.py — the Climb's own ink, rule and link. */
+  :root{
+    --ink:#14171c;
+    --muted:#5b6470;
+    --rule:#c8cdd4;
+    --accent:#1a4f7a;
+    --band:#f2f4f7;
+    --ground:#fbfbfc;
+    --serif:"Newsreader",Georgia,"Times New Roman",serif;
+    --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ink:#e6eaef; --muted:#98a3b1; --rule:#2c333d;
+      --accent:#84b6dd; --band:#171b21; --ground:#0f1216;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#e6eaef; --muted:#98a3b1; --rule:#2c333d;
+    --accent:#84b6dd; --band:#171b21; --ground:#0f1216;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:var(--ground); color:var(--ink);
+    font-family:var(--sans); font-size:16px; line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;}
+  .wrap{max-width:35rem; margin:0 auto; padding-inline:20px; padding-block:48px 72px;}
+  a{color:var(--accent);}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px;}
+
+  .eyebrow{
+    font-size:.72rem; font-weight:600; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--muted); margin:0;
+  }
+  h1{
+    font-family:var(--serif); font-weight:500; font-size:2.15rem;
+    line-height:1.1; margin:.5rem 0 0; text-wrap:balance;
+    letter-spacing:-.01em;
+  }
+  .standfirst{
+    font-family:var(--serif); font-size:1.09rem; line-height:1.6;
+    color:var(--ink); margin:1.1rem 0 0;
+  }
+  .hairline{border:0; border-top:1px solid var(--rule); margin:2.4rem 0;}
+
+  h2{
+    font-family:var(--sans); font-size:.76rem; font-weight:600;
+    letter-spacing:.13em; text-transform:uppercase; color:var(--muted);
+    margin:0 0 1.5rem; padding-bottom:.55rem; border-bottom:1px solid var(--rule);
+  }
+
+  .items{display:flex; flex-direction:column; gap:2.1rem;}
+  .item{display:grid; grid-template-columns:1.9rem 1fr; gap:0 .85rem;}
+  .rank{
+    font-family:var(--sans); font-variant-numeric:tabular-nums;
+    font-size:.95rem; font-weight:600; color:var(--rule);
+    line-height:1.45; padding-top:.12rem;
+  }
+  .title{
+    font-family:var(--serif); font-size:1.19rem; font-weight:600;
+    line-height:1.3; margin:0; text-wrap:balance;
+  }
+  .title a{text-decoration:none; border-bottom:1px solid var(--rule);}
+  .title a:hover{border-bottom-color:var(--accent);}
+  .meta{
+    font-size:.79rem; color:var(--muted); margin:.3rem 0 0;
+    font-variant-numeric:tabular-nums;
+  }
+  .meta .sep{color:var(--rule); padding:0 .35rem;}
+  .blurb{font-size:.925rem; color:var(--ink); margin:.55rem 0 0;}
+  .also{font-size:.82rem; margin:.5rem 0 0;}
+
+  .map{
+    background:var(--band); border-left:2px solid var(--accent);
+    padding:1.25rem 1.3rem; margin:0;
+  }
+  .map .title{font-size:1.32rem;}
+  .map .blurb{margin-top:.5rem;}
+
+  .caution{
+    font-size:.9rem; color:var(--ink); background:var(--band);
+    padding:1.1rem 1.25rem; margin:0;
+  }
+  .caution strong{font-weight:600;}
+  .caps{font-weight:600; letter-spacing:.03em;}
+
+  footer{
+    margin-top:3rem; padding-top:1.4rem; border-top:1px solid var(--rule);
+    font-size:.78rem; color:var(--muted);
+  }
+  footer p{margin:.4rem 0;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <p class="eyebrow">Onward and Upward</p>
+  <h1>The Homecoming Pack</h1>
+  <p class="standfirst">
+    This homecoming plan is the map forward. The &ldquo;Pack&rdquo; is the tool kit you travel with.
+    Its contents are listed here in order of their importance.
+    Use them as prescribed for a safe and successful climb!
+  </p>
+
+  <hr class="hairline">
+
+  <div class="map">
+    <p class="title"><a href="The-Onward-and-Upward-Climb.pdf" target="_blank" rel="noopener">The Onward and Upward Climb</a></p>
+    <p class="meta">A Returning Missionary&rsquo;s Homecoming Plan <span class="sep">&middot;</span> 27 pages</p>
+    <p class="blurb">
+      The plan itself, in seven sections, built for a phone. Every scripture is a live link.
+      Start here; everything below travels with it.
+    </p>
+  </div>
+
+  <hr class="hairline">
+
+  <h2>The What, Why, How, and When of Personal Preparation</h2>
+
+  <div class="items">
+
+    <div class="item">
+      <div class="rank">1</div>
+      <div>
+        <p class="title"><a href="Feasting-on-the-Words-of-Christ.pdf" target="_blank" rel="noopener">Feasting on the Words of Christ &mdash; The Doctrine</a></p>
+        <p class="meta">4 pages</p>
+        <p class="blurb">
+          The daily ten step discipline to receive revelation and the Feast Log &mdash; the morning
+          routine and the record of it. One line a day to capture in the log is the whole discipline.
+          It is the practice whose loss predicts every other loss.
+        </p>
+        <p class="also">&rarr; <a href="Feast-Log.xlsx">The Feast Log</a> <span class="meta">&mdash; a five-tab workbook. Download it and keep it.</span></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">2</div>
+      <div>
+        <p class="title"><a href="The-Practice-Check-in.pdf" target="_blank" rel="noopener">The Practice Check-in &mdash; Staying Safely on the Path</a></p>
+        <p class="meta">1 page</p>
+        <p class="blurb">
+          Nine practices and the cadence that keeps them real. Five connect you <span class="caps">UPWARD</span>
+          to God. Four connect you <span class="caps">OUTWARD</span>, to His children. Ask one honest question
+          each week: Which wall slipped in the least, and what is the smallest action that restores it?
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">3</div>
+      <div>
+        <p class="title"><a href="Wisdom-Lessons-from-the-Past.pdf" target="_blank" rel="noopener">Wisdom &mdash; Lessons from the Past</a></p>
+        <p class="meta">25 pages</p>
+        <p class="blurb">
+          Where the twelve walls in Part 2 come from and why you should trust them. The war chapters,
+          the kings of Israel, and one pattern found in both. Every scripture is a live link, so you
+          can check every claim yourself. Study the terrain so you are prepared for what&rsquo;s around the corner.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">4</div>
+      <div>
+        <p class="title"><a href="The-Twelve-Walls-Your-Own-Reading.pdf" target="_blank" rel="noopener">The Twelve Walls &mdash; Your Own Reading</a></p>
+        <p class="meta">4 pages</p>
+        <p class="blurb">
+          The working sheet that goes with <em>Wisdom</em>. Print it, mark it, date it. Then do it again
+          in six months. One reading is a snapshot. The second shows the direction of your travel.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">5</div>
+      <div>
+        <p class="title">Math That Doesn&rsquo;t Work</p>
+        <p class="meta">13 pages <span class="sep">&middot;</span> Part 3 of the Climb</p>
+        <p class="blurb">
+          It is the third part of the plan above, so you already have it. It also travels on its own,
+          for someone who needs this perspective and nothing else.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="hairline">
+
+  <h2>Additional Resources for your Climb</h2>
+
+  <div class="items">
+
+    <div class="item">
+      <div class="rank">6</div>
+      <div>
+        <p class="title"><a href="https://www.churchofjesuschrist.org/life/self-reliance/life-skills-course?lang=eng" target="_blank" rel="noopener">Life Skills &mdash; a Church-sponsored Self-Reliance course</a></p>
+        <p class="meta">12 weeks</p>
+        <p class="blurb">
+          Written for older youth and young single adults, to build the practical, spiritual, and
+          temporal skills that carry you into work, school, and adult life. It gathers three courses
+          into one &mdash; <em>Personal Finances</em>, <em>Find a Better Job</em>, and <em>Education for
+          Better Work</em> &mdash; built on <em>My Foundation for Self-Reliance</em>. Small groups, in
+          person or online. If no group is meeting near you, you can work through it on your own, or with friends.
+        </p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="rank">7</div>
+      <div>
+        <p class="title"><a href="https://www.churchofjesuschrist.org/life/self-reliance/courses?lang=eng" target="_blank" rel="noopener">Additional Self-Reliance courses</a></p>
+        <p class="meta">8&ndash;12 weeks</p>
+        <p class="blurb">
+          <em>Emotional Resilience</em>. <em>Starting and Growing My Business</em>. Same shape: a small
+          group, a facilitator, eight to twelve weeks, in person or online. Pick one as you build out
+          the first year &mdash; and the second, and the third.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="hairline">
+
+  <p class="caution">
+    <strong>One caution, and it comes from Part 3.</strong> These are items. Good ones, and worth adding.
+    <span class="caps">REMEMBER:</span> an item is not a multiplier. Take the course <strong>under</strong>
+    the purpose you chose, not instead of it.
+  </p>
+
+  <footer>
+    <p>Five documents and two courses. Nothing to download in a bundle &mdash; open what you need, when you need it.</p>
+    <p>This page is kept current. The link does not go stale.</p>
+  </footer>
+
+</div>
+
+<script>
+/* ── SET THIS ONE LINE IF THE FILES DO NOT SIT BESIDE THIS PAGE ──────────
+   Leave as "" when index.html and the six files share a folder.
+   For a WordPress Media Library upload, set it to the uploads path, e.g.
+     const BASE = "https://1healthusa.com/wp-content/uploads/2026/09/";
+   Trailing slash required. Nothing else in this file needs to change.     */
+const BASE = "";
+
+if (BASE) {
+  for (const a of document.querySelectorAll('a[href]')) {
+    const h = a.getAttribute('href');
+    if (!/^(https?:|mailto:|#|\/)/.test(h)) a.setAttribute('href', BASE + h);
+  }
+}
+</script>
+
+</body>
+</html>
